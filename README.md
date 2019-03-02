@@ -3,7 +3,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Scope Outline:
 
 This app was created initially for Salad Club day at HackerYou, giving users the ability to log what they will be bringing.
-I have changed it to a more versatile ittem recording app for multiple users. This app can be used for pot lucks, boardgame nights, sports day, etc..
+I have changed it to a more versatile item recording app for multiple users. This app can be used for pot lucks, boardgame nights, sporting event, etc..
 
 ## MVP (Minimum Viable Product) Goals:
 
