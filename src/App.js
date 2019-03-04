@@ -83,9 +83,7 @@ class App extends Component {
 		return (
 			<div className="app">
 				<header>
-					<div className="wrapper">
 						<h1>What We Be Bringing!</h1>
-					</div>
 				</header>
 				<Form
 					onSubmit={this.handleSubmit}
