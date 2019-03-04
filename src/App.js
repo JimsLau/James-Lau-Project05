@@ -3,7 +3,6 @@ import './App.css';
 import firebase from './firebase.js';
 import Form from './Form.js';
 import Results from './Results.js';
-import Item from './Item.js';
 
 class App extends Component {
 	constructor() {
@@ -16,6 +15,7 @@ class App extends Component {
 		};
 		this.handleChange = this.handleChange.bind(this);
 		this.handleSubmit = this.handleSubmit.bind(this);
+		this.removeItem = this.removeItem.bind(this);
 	}
 
 	handleChange(e) {
@@ -24,9 +24,17 @@ class App extends Component {
 		});
 	}
 
-	handleSubmit(e) {
+	handleConfirm = (event) => {
 		// Prevent referesh when submit(Add Item) button is pressed
-		e.preventDefault();
+		event.preventDefault();
+		if (this.state.currentItem && this.state.userName) {
+			this.handleSubmit();
+		} else {
+			alert('Please enter your name and item');
+		}
+	};
+
+	handleSubmit() {
 		// Create a space in Firebase database to store users' items, using .ref into 'items'
 		const itemsRef = firebase.database().ref('items');
 		// Grab input info (item and username) from state to send to Firebase database
@@ -79,30 +87,14 @@ class App extends Component {
 						<h1>What We Be Bringing!</h1>
 					</div>
 				</header>
-					<Form
-						onSubmit={this.handleSubmit}
-						onChange={this.handleChange}
-						nameValue={this.state.userName}
-						itemValue={this.state.currentItem}
-					/>
-				<section className="display-item">
-					<Results {...state.items.map((item) => {
-						<Item />
-						
-					})}/>
-					{/* <div className="wrapper">
-						<ul />
-						{this.state.items.map((item) => {
-							return (
-								<li key={item.id}>
-									<h3>{item.item}</h3>
-									<p>To be brought by: {item.user}</p>
-									<button onClick={() => this.removeItem(item.id)}>Remove Item!</button>
-								</li>
-							);
-						})}
-					</div>  */}
-				</section>
+				<Form
+					onSubmit={this.handleSubmit}
+					onChange={this.handleChange}
+					onClick={this.handleConfirm}
+					nameValue={this.state.userName}
+					itemValue={this.state.currentItem}
+				/>
+				<Results items={this.state.items} removeItem={this.removeItem} />
 			</div>
 		);
 	}

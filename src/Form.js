@@ -17,7 +17,7 @@ const Form = (props) => {
 				onChange={props.onChange}
 				value={props.itemValue}
 			/>
-			<button>Add Item!</button>
+			<button onClick={props.onClick}>Add Item!</button>
 		</form>
 	);
 };
