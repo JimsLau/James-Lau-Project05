@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 import firebase from './firebase.js';
+import Form from './Form.js';
+import Results from './Results.js';
+import Item from './Item.js';
 
 class App extends Component {
 	constructor() {
@@ -62,7 +65,7 @@ class App extends Component {
 		});
 	}
 
-  // Create method to remove items form page
+	// Create method to remove items from page
 	removeItem(itemId) {
 		const itemRef = firebase.database().ref(`/items/${itemId}`);
 		itemRef.remove();
@@ -76,41 +79,30 @@ class App extends Component {
 						<h1>What We Be Bringing!</h1>
 					</div>
 				</header>
-				<div className="container">
-					<section className="add-item">
-						<form onSubmit={this.handleSubmit}>
-							<input
-								type="text"
-								name="userName"
-								placeholder="What do people call you?"
-								onChange={this.handleChange}
-								value={this.state.userName}
-							/>
-							<input
-								type="text"
-								name="currentItem"
-								placeholder="What will you be bringing?"
-								onChange={this.handleChange}
-								value={this.state.currentItem}
-							/>
-							<button>Add Item</button>
-						</form>
-					</section>
-					<section className="display-item">
-						<div className="wrapper">
-							<ul />
-							{this.state.items.map((item) => {
-								return (
-									<li key={item.id}>
-										<h3>{item.item}</h3>
-										<p>To be brought by: {item.user}</p>
-                    <button onClick={() => this.removeItem(item.id)}>Remove Item!</button>
-									</li>
-								);
-							})}
-						</div>
-					</section>
-				</div>
+					<Form
+						onSubmit={this.handleSubmit}
+						onChange={this.handleChange}
+						nameValue={this.state.userName}
+						itemValue={this.state.currentItem}
+					/>
+				<section className="display-item">
+					<Results {...state.items.map((item) => {
+						<Item />
+						
+					})}/>
+					{/* <div className="wrapper">
+						<ul />
+						{this.state.items.map((item) => {
+							return (
+								<li key={item.id}>
+									<h3>{item.item}</h3>
+									<p>To be brought by: {item.user}</p>
+									<button onClick={() => this.removeItem(item.id)}>Remove Item!</button>
+								</li>
+							);
+						})}
+					</div>  */}
+				</section>
 			</div>
 		);
 	}
