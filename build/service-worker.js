@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/james-lau-project5/precache-manifest.9ce886e4ad9cfc754ff3792cfbc4bd09.js"
+  "/whatWeBeBringing/precache-manifest.043a5b9f30fbe938b9fd27b6a7d3c587.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/james-lau-project5/index.html", {
+workbox.routing.registerNavigationRoute("/whatWeBeBringing/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });

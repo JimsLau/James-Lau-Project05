@@ -1,13 +1,13 @@
 {
-  "main.css": "/james-lau-project5/static/css/main.0c90a5fe.chunk.css",
-  "main.js": "/james-lau-project5/static/js/main.a8cd6d88.chunk.js",
-  "main.js.map": "/james-lau-project5/static/js/main.a8cd6d88.chunk.js.map",
-  "runtime~main.js": "/james-lau-project5/static/js/runtime~main.de257285.js",
-  "runtime~main.js.map": "/james-lau-project5/static/js/runtime~main.de257285.js.map",
-  "static/js/2.ae4827e2.chunk.js": "/james-lau-project5/static/js/2.ae4827e2.chunk.js",
-  "static/js/2.ae4827e2.chunk.js.map": "/james-lau-project5/static/js/2.ae4827e2.chunk.js.map",
-  "index.html": "/james-lau-project5/index.html",
-  "precache-manifest.9ce886e4ad9cfc754ff3792cfbc4bd09.js": "/james-lau-project5/precache-manifest.9ce886e4ad9cfc754ff3792cfbc4bd09.js",
-  "service-worker.js": "/james-lau-project5/service-worker.js",
-  "static/css/main.0c90a5fe.chunk.css.map": "/james-lau-project5/static/css/main.0c90a5fe.chunk.css.map"
+  "main.css": "/whatWeBeBringing/static/css/main.0c90a5fe.chunk.css",
+  "main.js": "/whatWeBeBringing/static/js/main.90f9cac3.chunk.js",
+  "main.js.map": "/whatWeBeBringing/static/js/main.90f9cac3.chunk.js.map",
+  "runtime~main.js": "/whatWeBeBringing/static/js/runtime~main.9adee90c.js",
+  "runtime~main.js.map": "/whatWeBeBringing/static/js/runtime~main.9adee90c.js.map",
+  "static/js/2.4f6c523a.chunk.js": "/whatWeBeBringing/static/js/2.4f6c523a.chunk.js",
+  "static/js/2.4f6c523a.chunk.js.map": "/whatWeBeBringing/static/js/2.4f6c523a.chunk.js.map",
+  "index.html": "/whatWeBeBringing/index.html",
+  "precache-manifest.043a5b9f30fbe938b9fd27b6a7d3c587.js": "/whatWeBeBringing/precache-manifest.043a5b9f30fbe938b9fd27b6a7d3c587.js",
+  "service-worker.js": "/whatWeBeBringing/service-worker.js",
+  "static/css/main.0c90a5fe.chunk.css.map": "/whatWeBeBringing/static/css/main.0c90a5fe.chunk.css.map"
 }

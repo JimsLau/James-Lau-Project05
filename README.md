@@ -10,6 +10,3 @@ I have changed it to a more versatile item recording app for multiple users. Thi
 
 To successfully have multiple users log what item they are bringing, with a remove item option as well.
 
-## Stretch Goals:
-
-To group multiple items per user.

@@ -2,7 +2,7 @@
   "name": "james-lau-project05",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jimslau.github.io/james-lau-project05",
+  "homepage": "https://jimslau.github.io/whatWeBeBringing/",
   "dependencies": {
     "firebase": "^5.8.5",
     "gh-pages": "^2.0.1",
@@ -13,7 +13,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
