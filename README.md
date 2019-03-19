@@ -8,5 +8,5 @@ I have changed it to a more versatile item recording app for multiple users. Thi
 
 ## MVP (Minimum Viable Product) Goals:
 
-To successfully have multiple users log what item they are bringing, with a remove item option as well.
+To successfully have multiple users log what items they are bringing, with a remove item option as well.
 

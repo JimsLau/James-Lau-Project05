@@ -5,6 +5,7 @@ import './App.css';
 import firebase from './firebase.js';
 import Form from './Form.js';
 import Results from './Results.js';
+import swal from 'sweetalert';
 
 class App extends Component {
 	constructor() {
@@ -32,9 +33,12 @@ class App extends Component {
 		if (this.state.currentItem && this.state.userName) {
 			this.handleSubmit();
 		} else {
-			alert('Please enter your name and item');
+			swal({
+				text: 'Please enter your name and item',
+				icon: 'error'
+			});
 		}
-	};
+	}	
 
 	handleSubmit() {
 		// Create a space in Firebase database to store users' items, using .ref into 'items'
